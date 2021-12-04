@@ -6,6 +6,7 @@ export interface OrderCreatedEvent {
   // only add in data that listeners of this event care about
   data: {
     id: string;
+    version: number;
     status: OrderStatus;
     userId: string;
     expiresAt: string;
